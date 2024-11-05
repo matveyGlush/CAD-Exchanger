@@ -28,7 +28,7 @@ export default async function Image() {
           justifyContent: 'center',
         }}
       >
-        Contact us by matveyGlush
+        Some Company. Main page by matveyGlush
       </div>
     ),
     // ImageResponse options
