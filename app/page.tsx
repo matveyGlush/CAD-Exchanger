@@ -19,10 +19,9 @@ const ContentPage = () => {
     <>
       <Head>
         <meta property="og:image" content="<generated>" />
-        <meta property="og:image:alt" content="About Acme" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
       </Head>
       <CustomLayout>
         <Section sx={{ mb: 5, backgroundColor: '#f5f7f8', borderRadius: '8px' }}>
