@@ -1,10 +1,11 @@
 "use client"
 
 import { ReactNode } from 'react';
-import { Container, Box, AppBar, Toolbar, Typography, Button, ThemeProvider, createTheme } from '@mui/material';
+import { Container, Box, AppBar, Toolbar, Typography, ThemeProvider, createTheme } from '@mui/material';
 import Link from 'next/link';
 import HideOnScroll from './HideOnScroll'
 import { usePathname } from 'next/navigation';
+import CunstomButton from './CustomButton';
 
 const theme = createTheme({
   typography: {
@@ -29,14 +30,14 @@ export default function CustomLayout({ children }: { children: ReactNode }) {
       <HideOnScroll>
         <AppBar position="fixed">
           <Toolbar sx={{ width: '100%', mx: 'auto', maxWidth: 1200, justifyContent: 'space-between' }}>
-            <Link tabIndex={-1} href={"/"}>
+            <Link href={"/"}>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 Some&nbsp;Company
               </Typography>
             </Link>
             {pathname !== '/contact-us' &&
               <Link tabIndex={-1} href={"contact-us"}>
-                <Button variant="contained" color="secondary">Contact&nbsp;us</Button>
+                <CunstomButton variant="contained" color="secondary">Contact&nbsp;us</CunstomButton>
               </Link>
             }
           </Toolbar>

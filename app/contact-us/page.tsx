@@ -1,5 +1,6 @@
 "use client"
 
+import CunstomButton from '@/components/CustomButton';
 import CustomLayout from '@/components/CustomLayout';
 import { Button, TextField, Typography, Paper } from '@mui/material';
 import { Container, styled } from '@mui/system';
@@ -133,7 +134,7 @@ export default function ContactPage() {
                   }}
                 />
 
-                <Button
+                <CunstomButton
                   type="submit"
                   variant="contained"
                   fullWidth
@@ -147,7 +148,7 @@ export default function ContactPage() {
                   }}
                 >
                   Submit
-                </Button>
+                </CunstomButton>
               </form>
             }
           </FormContainer>

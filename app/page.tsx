@@ -1,7 +1,8 @@
 "use client"
 
+import CunstomButton from '@/components/CustomButton';
 import CustomLayout from '@/components/CustomLayout';
-import { Grid2, Box, Button, Typography, Paper } from '@mui/material';
+import { Grid2, Box, Typography, Paper } from '@mui/material';
 import { styled, useMediaQuery } from '@mui/system';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -11,7 +12,7 @@ import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 const Section = styled(Box)({
   padding: '2rem 0',
-  textAlign: 'center',
+textAlign: 'center',
 });
 
 export default function Home() {
@@ -60,13 +61,13 @@ export default function Home() {
             ))}
           </Grid2>
           <Link tabIndex={-1} href={"contact-us"}>
-            <Button variant="contained" color="primary" sx={{ borderRadius: '8px', mt: 5 }}>Contact&nbsp;us</Button>
+            <CunstomButton variant="contained" color="primary" sx={{ borderRadius: '8px', mt: 5 }}>Contact&nbsp;us</CunstomButton>
           </Link>
         </Section>
         <Section sx={{ backgroundColor: '#f5f7f8', py: '4rem', borderRadius: '8px' }}>
           <Typography variant="h3">Less important title</Typography>
           <Link tabIndex={-1} href={"contact-us"}>
-            <Button variant="contained" color="primary" sx={{ borderRadius: '8px', mt: 2 }}>Contact&nbsp;us</Button>
+            <CunstomButton variant="contained" color="primary" sx={{ borderRadius: '8px', mt: 2 }}>Contact&nbsp;us</CunstomButton>
           </Link>
         </Section>
       </CustomLayout>
