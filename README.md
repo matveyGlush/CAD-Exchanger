@@ -11,6 +11,13 @@ technologies used:
 
 ---
 
+minor design improovments were made:
+- hide contact us button on the /contact-us page
+- change header color for better contrast
+- on /contact-us page remove bg
+
+---
+
 ## Features
 
 1. **Interactive UI with Hover and Focus Effects**  
