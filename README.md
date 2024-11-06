@@ -11,7 +11,8 @@ technologies used:
 
 ---
 
-minor design improovments were made:
+minor design improvement were made:
+- make Some company text in header a link for better ui
 - hide contact us button on the /contact-us page
 - change header color for better contrast
 - on /contact-us page remove bg
