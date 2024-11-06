@@ -5,6 +5,9 @@ import { Grid2, Box, Button, Typography, Paper } from '@mui/material';
 import { styled, useMediaQuery } from '@mui/system';
 import Head from 'next/head';
 import Link from 'next/link';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+
 
 const Section = styled(Box)({
   padding: '2rem 0',
@@ -26,7 +29,7 @@ export default function Home() {
       <CustomLayout>
         <Section sx={{ mb: 5, backgroundColor: '#f5f7f8', borderRadius: '8px' }}>
           <Grid2 container spacing={2} justifyContent="center" alignItems="center" sx={{ mt: 4, p: 3 }}>
-            <Grid2 size={{ xs: 12, md: 6 }} sx={{ mb: 3 }}>
+            <Grid2 size={{ xs: 12, md: 6 }} sx={{ mb: 3, px: 3 }}>
               <Typography variant="h1">
                 Most important title on&nbsp;the page
               </Typography>
@@ -34,15 +37,19 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis, leo et&nbsp;condimentum ultricies.
               </Typography>
             </Grid2>
-            <Grid2 size={{ xs: 12, md: 6 }} sx={{}}>
-              <iframe width={matches ? 280 : 400} height={matches ? 150 : 250} style={{ borderRadius: '8px' }}
+            <Grid2 size={{ xs: 12, md: 6 }} sx={{ borderRadius: '8px', overflow: 'hidden' }}>
+              {/* <iframe width={matches ? 280 : 400} height={matches ? 150 : 250} style={{ borderRadius: '8px' }}
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=btyGVFlMoDfKffwZ"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
-              ></iframe>
+              ></iframe> */}
+              <LiteYouTubeEmbed
+                id="dQw4w9WgXcQ" // Default none, id of the video or playlist
+                title="YouTube Embed" // a11y, always provide a title for iFrames: https://dequeuniversity.com/tips/provide-iframe-titles Help the web be accessible ;)
+              />
             </Grid2>
           </Grid2>
         </Section>
