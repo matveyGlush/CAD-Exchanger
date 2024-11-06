@@ -38,14 +38,6 @@ export default function Home() {
               </Typography>
             </Grid2>
             <Grid2 size={{ xs: 12, md: 6 }} sx={{ borderRadius: '8px', overflow: 'hidden' }}>
-              {/* <iframe width={matches ? 280 : 400} height={matches ? 150 : 250} style={{ borderRadius: '8px' }}
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=btyGVFlMoDfKffwZ"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe> */}
               <LiteYouTubeEmbed
                 id="dQw4w9WgXcQ" // Default none, id of the video or playlist
                 title="YouTube Embed" // a11y, always provide a title for iFrames: https://dequeuniversity.com/tips/provide-iframe-titles Help the web be accessible ;)
@@ -67,13 +59,13 @@ export default function Home() {
               </Grid2>
             ))}
           </Grid2>
-          <Link href={"contact-us"}>
+          <Link tabIndex={-1} href={"contact-us"}>
             <Button variant="contained" color="primary" sx={{ borderRadius: '8px', mt: 5 }}>Contact&nbsp;us</Button>
           </Link>
         </Section>
         <Section sx={{ backgroundColor: '#f5f7f8', py: '4rem', borderRadius: '8px' }}>
           <Typography variant="h3">Less important title</Typography>
-          <Link href={"contact-us"}>
+          <Link tabIndex={-1} href={"contact-us"}>
             <Button variant="contained" color="primary" sx={{ borderRadius: '8px', mt: 2 }}>Contact&nbsp;us</Button>
           </Link>
         </Section>

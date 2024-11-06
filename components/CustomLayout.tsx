@@ -29,13 +29,13 @@ export default function CustomLayout({ children }: { children: ReactNode }) {
       <HideOnScroll>
         <AppBar position="fixed">
           <Toolbar sx={{ width: '100%', mx: 'auto', maxWidth: 1200, justifyContent: 'space-between' }}>
-            <Link href={"/"}>
+            <Link tabIndex={-1} href={"/"}>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 Some&nbsp;Company
               </Typography>
             </Link>
             {pathname !== '/contact-us' &&
-              <Link href={"contact-us"}>
+              <Link tabIndex={-1} href={"contact-us"}>
                 <Button variant="contained" color="secondary">Contact&nbsp;us</Button>
               </Link>
             }
