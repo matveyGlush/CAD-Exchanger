@@ -11,7 +11,7 @@ const Section = styled(Box)({
   textAlign: 'center',
 });
 
-const ContentPage = () => {
+export default function Home() {
 
   const matches = useMediaQuery('(max-width:500px)');
 
@@ -35,7 +35,6 @@ const ContentPage = () => {
               </Typography>
             </Grid2>
             <Grid2 size={{ xs: 12, md: 6 }} sx={{}}>
-              {/* <VideoPlaceholder> YouTube video </VideoPlaceholder> */}
               <iframe width={matches ? 280 : 400} height={matches ? 150 : 250} style={{ borderRadius: '8px' }}
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=btyGVFlMoDfKffwZ"
                 title="YouTube video player"
@@ -75,5 +74,3 @@ const ContentPage = () => {
     </>
   );
 };
-
-export default ContentPage;
